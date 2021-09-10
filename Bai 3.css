@@ -1,0 +1,31 @@
+body {
+  background: rgb(168, 151, 0);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.color-picker {
+  position: relative;
+}
+
+.indicator {
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 40px;
+  vertical-align: middle;
+}
+
+#picker {
+  display: inline-block;
+  vertical-align: middle;
+
+}
+
+.random {
+  display: block;
+  margin: 50 50;
+}

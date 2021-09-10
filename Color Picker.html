@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+    <link rel="stylesheet" href="Bai 3.css">
+</head>
+<body>
+    <div class="color-picker"></div>
+    <div id="color-indicator" class="color-indicator"></div>
+    <div id="color-picker"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
+
+    <script>
+        var colorIndicator = document.getElementById('indicator')
+            colorPicker = new iro.ColorPicker("#color-picker", {
+                width:360, color: "#fff"
+            });
+            ColorPicker.on('color:change', function(color) {
+                colorIndicator.style.backgroundColor = color.hexString;
+            })
+    </script>
+    <button class ="random">Random Color</button>
+</body>
+</html>
